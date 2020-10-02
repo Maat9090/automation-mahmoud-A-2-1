@@ -1,0 +1,100 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 1,
+    "pending": 0,
+    "failures": 0,
+    "start": "2020-10-01T07:59:56.237Z",
+    "end": "2020-10-01T08:00:38.101Z",
+    "duration": 41864,
+    "testsRegistered": 1,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "3d70d3fd-b47d-46aa-be56-022a689ec7fc",
+      "title": "",
+      "fullFile": "cypress/integration/visual-regresion.spec.js",
+      "file": "cypress/integration/visual-regresion.spec.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "056d2277-ed11-4a22-8ed2-8a5f57944b0f",
+          "title": "Regression with page object test suite",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": " Edit first client ",
+              "fullTitle": "Regression with page object test suite  Edit first client ",
+              "timedOut": null,
+              "duration": 24190,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "indexFuncs.performValidLogin(cy, targets.username, targets.password, 'Tester Hotel Overview');\nclientFuncs.GoToClientPage(cy, 'Clients');\nCreateNewClientsFuncs.GoToNewClientPage(cy, 'New Client');\nCreateNewClientsFuncs.makeNewClient(cy, targets.name, targets.email, targets.telephoneNr, 'Clients');\ncy.percySnapshot('New client');\nCreateNewClientsFuncs.editThetelephoneNrFirstClient(cy, targets.telephoneNr);\ncy.percySnapshot('Edit client');\ndashBoardFuncs.performLogout(cy, 'Login');",
+              "err": {},
+              "uuid": "ff1d2d83-e3da-4dd1-85d0-02574aca0cff",
+              "parentUUID": "056d2277-ed11-4a22-8ed2-8a5f57944b0f",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "ff1d2d83-e3da-4dd1-85d0-02574aca0cff"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 24190,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "6.1.1"
+    },
+    "marge": {
+      "options": null,
+      "version": "5.1.0"
+    }
+  }
+}
